@@ -1,4 +1,4 @@
-GitHub : 
+GitHub : https://github.com/CitroXD/TPDM_POO
 
 
 Hibernate -> Remplace requête à base de donnée par appel à des méthodes objet de haut niveau
