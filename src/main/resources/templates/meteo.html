@@ -1,0 +1,19 @@
+<!DOCTYPE  HTML>
+<html  xmlns:th="http:// www.thymeleaf.org">
+	<head>
+		<title>meteo</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	</head>
+	
+<body>
+<ul th:each="adresse : ${adresse}"
+	<li th:text="${adresse}"/>
+</ul>
+<ul th:each="ville : ${ville}"
+	<li th:text="${ville}"/>
+</ul>	
+	<ul th:each="meteo : ${meteo}">
+			<li th:text= "${meteo.currently.summary}"/>
+			<li th:text="${meteo.currently.temperature}"/>
+		</ul>
+</html>
