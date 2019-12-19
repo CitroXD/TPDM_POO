@@ -1,0 +1,1 @@
+Hibernate -> Remplace requête à base de donnée par appel à des méthodes objet de haut niveau
