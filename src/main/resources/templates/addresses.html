@@ -2,8 +2,15 @@
 <html  xmlns:th="http:// www.thymeleaf.org">
 	<head>
 		<title>Addresses</title>
+	<style>
+			li {
+	  display: inline;
+	}
+	</style>
+		<title>Adresses </title>
+		<div th:insert="~{fragment :: my-fragment}"></div>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-	</head>
+</head>
 	<body>
 		<h1>Les  differentes  adresses </h1>
 		<ul th:each="address: ${allAddresses}">

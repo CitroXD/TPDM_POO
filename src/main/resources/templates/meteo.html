@@ -15,5 +15,6 @@
 	<ul th:each="meteo : ${meteo}">
 			<li th:text= "${meteo.currently.summary}"/>
 			<li th:text="${meteo.currently.temperature}"/>
+			<li th:text="${meteo.currently.windSpeed}"/>
 		</ul>
 </html>

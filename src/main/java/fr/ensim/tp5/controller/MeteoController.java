@@ -20,8 +20,8 @@ public class MeteoController {
 		ResultatRequeteAdresse res = restTemplate.getForObject("https://api-adresse.data.gouv.fr/search/?q=" + adresse,
 				ResultatRequeteAdresse.class);
 		System.out.println(adresse);
-		double lat = res.getFeatures().get(0).getGeometry().getCoordinates().get(0);
-		double lon = res.getFeatures().get(0).getGeometry().getCoordinates().get(1);
+		double lon = res.getFeatures().get(0).getGeometry().getCoordinates().get(0);
+		double lat = res.getFeatures().get(0).getGeometry().getCoordinates().get(1);
 		ResultatDarkSky darkSky = restTemplate
 				.getForObject("https://api.darksky.net/forecast/919b299c523ecf6f6991d173c20fe78d/" + lat + "," + lon
 						+ "?lang=fr&units=si&exclude=daily,hourly,flags", ResultatDarkSky.class);
